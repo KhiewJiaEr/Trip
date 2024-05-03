@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="format-detection" content="telephone=no">
+      <meta charset="utf-8">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <title>Add Expense</title>
+    </head>
+    <body>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="left" id ="button-backExpense">
+            <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg></button>
+            <a class="navbar-brand">Add Expense</a>
+          </div>
+        </div>
+      </nav>
+
+        <div class="container-fluid">
+            <label for="text-expenseType">Type Of Expense*</label>
+              <select id="text-expenseType" class="form-control">
+                <option value="">== Please Choose ==</option>
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+                <option value="Other">Other</option>
+              </select>
+            <div class="form-floating mt-2">
+              <input type="number" class="form-control" id="text-expenseAmount" placeholder="Amount Of The Expense" required title="Please enter the Amount Of The Expense">
+              <label for="text-expenseAmount">Amount Of The Expense*</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="date" class="form-control" id="text-expenseDate" placeholder="Time Of The Expense" required title="Please enter Time Of The Expense">
+              <label for="text-expenseDate">Time Of The Expense*</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="text" class="form-control" id="text-comments" placeholder="Additional Comments">
+              <label for="text-comments">Additional Comments</label>
+            </div>
+            <div class="form-floating mt-2">
+              <button type="button" class="btn btn-primary" id="button-save">Save</button>
+              <button type="button" class="btn btn-primary" id="button-update">Update</button>
+            </div>
+          </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/zepto.min.js"></script>
+        <script type="text/javascript" src="js/AddExpenses.js"></script>
+      </body>
+  </html>
+</html>

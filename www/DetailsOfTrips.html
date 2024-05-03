@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="format-detection" content="telephone=no">
+      <meta charset="utf-8">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <title>Trip</title>
+    </head>
+    <body>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="left" id ="button-back">
+            <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg></button>
+            <a class="navbar-brand">Details Of Trips</a>
+          </div>
+        </div>
+      </nav>
+
+        <div class="container-fluid">
+            <div class="form-floating mt-2">
+              <input type="text" class="form-control" id="text-name" placeholder="Name Of Trip" required>
+              <label for="text-name">Name Of Trip*</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="text" class="form-control" id="text-destination" placeholder="Destination" required>
+              <label for="text-destination">Destination*</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="date" class="form-control" id="text-date" placeholder="Date Of The Trip" required title="Please enter Date Of The Trip">
+              <label for="text-date">Date Of The Trip*</label>
+            </div>
+            <div class="mt-2">
+              <label for="text-riskYes">Risk Assessment*</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="risk" id="RadioNo" value="No">
+                <label class="form-check-label" for="RadioNo">No</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="risk" id="RadioYes" value="Yes">
+                <label class="form-check-label" for="RadioYes">Yes</label>
+              </div>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="number" class="form-control" id="text-expenses" placeholder="Expenses" required title="Please enter your Expenses">
+              <label for="text-expenses">Expenses*</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="text" class="form-control" id="text-travelFrom" placeholder="Travel From">
+              <label for="text-travelFrom">Travel From</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="text" class="form-control" id="text-description" placeholder="Description">
+              <label for="text-description">Description</label>
+            </div>
+            <div class="form-floating mt-2">
+              <button type="button" class="btn btn-primary" id="button-save">Save</button>
+              <button type="button" class="btn btn-primary" id="button-update">Update</button>
+            </div>
+          </div>
+        </div>
+
+      <script src="cordova.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/zepto.min.js"></script>
+      <script src="js/DetailsOfTrips.js"></script>
+    </body>
+</html>

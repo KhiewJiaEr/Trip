@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="format-detection" content="telephone=no">
+      <meta charset="utf-8">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <title>Expenses</title>
+    </head>
+    <body>
+      <div style="padding-top: 50px; position: relative; z-index: 1000;">
+        <div class="card" style="position: fixed; top: 0; left: 0; right: 0;">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="left" id ="button-back">
+                <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg></button>
+                <a class="navbar-brand">Expenses</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>      
+
+      <div class="list p-2">
+        <nav class="navbar bg-body-tertiary">
+          <button id ="button-deleteAll" type="button" class="btn btn-danger">Delete All</button>
+          <div class="right">
+            <button type="button" class="btn btn-primary" id ="button-addExpense">Add Expense <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg></button>
+          </div>
+        </nav>       
+      </div>
+
+      <div style="padding-bottom: 50px;">
+
+        <div id="list" class="list p-2"></div>
+
+        <div class="card" style="position: fixed; bottom: 0; left: 0; right: 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">Total Expenses</div>
+              <div class="col" id="totalExpanses"></div>
+            </div> 
+          </div>      
+        </div>
+      </div>
+      
+
+      <script src="cordova.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/zepto.min.js"></script>
+      <script type="text/javascript" src="js/indexViewExpenses.js"></script>
+    </body>
+</html>
